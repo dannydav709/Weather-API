@@ -1,7 +1,102 @@
-*{
+* {
     margin:0;
     padding:0;
     font-family:'Poppins', sans-serif;
     box-sizing: border-box;
+}
 
+body {
+    /*background: #222;*/
+}
+
+.card {
+    width: 90%; /*sets the width of the .card elements to 90% of their parent element's width.*/
+    max-width: 470px; /**/
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+
+    /* ------ TEST ------*/
+    border: 10px red solid;
+    /*width: 100%; !*sets the width of the .card elements to 90% of their parent element's width.*!*/
+    /*margin: 0;*/
+    /*height: 100px;*/
+    /*overflow: scroll;*/
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* ------ TEST ------*/
+    border: 7px red solid;
+    margin: auto;
+    height: 100px;
+    /*flex-direction: column;*/
+
+}
+
+.search input{
+    border: 0; /*why does commenting this out cause the text
+    inside input to increase? A stretching happens, text grows too*/
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+    /* ------ TEST ------*/
+    /*flex-flow: wrap;*/
+
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    /*background: #ebfffc;*/
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    /* ------ TEST ------*/
+    /*background: transparent;*/
+
+}
+
+.search button img {
+    width: 16px;
+}
+
+.test {
+    display: flex;
+    margin-top: 100px;
+    border: 7px red solid;
+    padding: 20px;
+    align-content: center;
+    justify-content: space-between;
+    width: 600px;
+
+}
+
+.test #input_1 {
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+
+.test #input_2 {
+    flex-grow: 2;
+}
+
+.test #input_3 {
+    flex-grow: 1;
 }
